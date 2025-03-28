@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online tool to download videos from TeraBox in multiple formats and resolutions. Fast, secure, and no watermark.">
+    <meta name="keywords" content="terabox downloader, video downloader, download terabox videos, terabox to mp4, cloud video downloader">
+    <meta name="author" content="Hasanvlo">
+    <meta property="og:title" content="TeraBox Video Downloader | Free Online Tool">
+    <meta property="og:description" content="Download videos from TeraBox in HD quality with multiple format options. No watermark, fast speeds.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/terabox-downloader">
+    <meta name="robots" content="index, follow">
+    <title>TeraBox Video Downloader | Fast & Free Cloud Video Download Tool</title>
+    <link rel="canonical" href="https://yourdomain.com/terabox-downloader">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ADSENSE_ID" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4285f4;
+            --secondary-color: #34a853;
+            --accent-color: #ea4335;
+            --light-gray: #f5f5f5;
+            --dark-gray: #333;
+            --medium-gray: #757575;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #3367d6;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: var(--dark-gray);
+            border: 1px solid #ddd;
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--light-gray);
+            border-color: var(--medium-gray);
+        }
+
+        .btn-success {
+            background-color: var(--secondary-color);
+        }
+
+        .btn-success:hover {
+            background-color: #2d9249;
+        }
+
+        .btn-danger {
+            background-color: var(--accent-color);
+        }
+
+        .btn-danger:hover {
+            background-color: #d33434;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark-gray);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--medium-gray);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .downloader-tool {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+
+        .tool-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .tool-header h2 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .url-input {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .url-input input {
+            flex: 1;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .url-input input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
+        }
+
+        .controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .control-group {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .control-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--dark-gray);
+        }
+
+        .select-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .select-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.2);
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .checkbox-group input {
+            margin-right: 0.5rem;
+        }
+
+        .checkbox-group label {
+            font-size: 0.9rem;
+        }
+
+        .preview-container {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .video-preview {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-preview video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .download-options {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .download-status {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: var(--light-gray);
+            border-radius: 4px;
+            display: none;
+        }
+
+        .progress-bar {
+            height: 10px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            margin-top: 0.5rem;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: var(--primary-color);
+            width: 0%;
+            transition: width 0.3s;
+        }
+
+        .status-text {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .download-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .batch-download {
+            margin-top: 2rem;
+            border-top: 1px solid #eee;
+            padding-top: 1.5rem;
+        }
+
+        .batch-urls {
+            margin-top: 1rem;
+        }
+
+        .batch-url {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .batch-url input {
+            flex: 1;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .batch-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .ad-container {
+            margin: 2rem 0;
+            text-align: center;
+            background-color: var(--light-gray);
+            padding: 1rem;
+            border-radius: 4px;
+        }
+
+        .ad-label {
+            font-size: 0.8rem;
+            color: var(--medium-gray);
+            margin-bottom: 0.5rem;
+        }
+
+        .features {
+            padding: 3rem 0;
+            background-color: white;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background-color: var(--light-gray);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 0.5rem;
+            color: var(--dark-gray);
+        }
+
+        footer {
+            background-color: var(--dark-gray);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        .spinner {
+            display: none;
+            width: 40px;
+            height: 40px;
+            margin: 0 auto;
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            border-top: 4px solid var(--primary-color);
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .breadcrumb {
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+            }
+            
+            nav ul li {
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .controls {
+                flex-direction: column;
+            }
+            
+            .download-options {
+                flex-direction: column;
+            }
+            
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo">TeraBox Downloader Pro</a>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/features">Features</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="breadcrumb container">
+        <a href="/">Home</a> &gt; <span>TeraBox Downloader</span>
+    </div>
+    
+    <section class="hero">
+        <div class="container">
+            <h1>TeraBox Video Downloader</h1>
+            <p>Download videos from TeraBox cloud storage in multiple formats and resolutions. Fast, secure, and no watermark.</p>
+        </div>
+    </section>
+    
+    <div class="container">
+        <!-- Top Ad Banner -->
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
+        <div class="downloader-tool">
+            <div class="tool-header">
+                <h2>Download TeraBox Videos</h2>
+                <p>Paste your TeraBox video link below to download</p>
+            </div>
+            
+            <div class="url-input">
+                <input type="text" id="videoUrl" placeholder="Paste TeraBox video URL here...">
+                <button class="btn" id="fetchBtn">Fetch Video</button>
+            </div>
+            
+            <div class="preview-container" id="previewContainer" style="display: none;">
+                <h3>Video Preview</h3>
+                <div class="video-preview">
+                    <video controls id="videoPreview">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <div class="control-group">
+                    <label for="downloadFormat">Download Format</label>
+                    <select id="downloadFormat" class="select-control">
+                        <option value="mp4">MP4 (Recommended)</option>
+                        <option value="mkv">MKV</option>
+                        <option value="avi">AVI</option>
+                        <option value="mov">MOV</option>
+                        <option value="webm">WebM</option>
+                    </select>
+                </div>
+                
+                <div class="control-group">
+                    <label for="downloadQuality">Video Quality</label>
+                    <select id="downloadQuality" class="select-control">
+                        <option value="1080">1080p (Full HD)</option>
+                        <option value="720">720p (HD)</option>
+                        <option value="480">480p (SD)</option>
+                        <option value="360">360p</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="highSpeed" checked>
+                <label for="highSpeed">Enable high-speed download</label>
+            </div>
+            
+            <div class="download-options">
+                <button class="btn btn-success" id="downloadBtn" disabled>
+                    <i class="fas fa-download"></i> Download Video
+                </button>
+                <button class="btn btn-secondary" id="downloadMp3Btn">
+                    <i class="fas fa-music"></i> Extract Audio (MP3)
+                </button>
+            </div>
+            
+            <div class="download-status" id="downloadStatus">
+                <div>Downloading: <span id="fileName">video.mp4</span></div>
+                <div class="progress-bar">
+                    <div class="progress" id="downloadProgress"></div>
+                </div>
+                <div class="status-text">
+                    <span id="progressText">0%</span>
+                    <span id="speedText">0 KB/s</span>
+                </div>
+                <div class="download-actions">
+                    <button class="btn btn-secondary" id="pauseBtn">
+                        <i class="fas fa-pause"></i> Pause
+                    </button>
+                    <button class="btn btn-danger" id="cancelBtn">
+                        <i class="fas fa-times"></i> Cancel
+                    </button>
+                </div>
+            </div>
+            
+            <div class="batch-download">
+                <h3>Batch Download Multiple Videos</h3>
+                <div class="batch-urls" id="batchUrls">
+                    <div class="batch-url">
+                        <input type="text" placeholder="Paste TeraBox video URL">
+                        <button class="btn btn-danger" onclick="removeBatchUrl(this)">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="batch-actions">
+                    <button class="btn btn-secondary" onclick="addBatchUrl()">
+                        <i class="fas fa-plus"></i> Add URL
+                    </button>
+                    <button class="btn btn-success" id="batchDownloadBtn">
+                        <i class="fas fa-download"></i> Download All
+                    </button>
+                </div>
+            </div>
+            
+            <div class="spinner" id="spinner"></div>
+        </div>
+        
+        <!-- Middle Ad Banner -->
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
+        <section class="features">
+            <div class="container">
+                <h2>Why Use Our TeraBox Downloader?</h2>
+                <p>Our tool offers the best way to download videos from TeraBox cloud storage</p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                        <h3>Fast Downloading</h3>
+                        <p>Download videos from TeraBox at maximum speed with our optimized servers.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-file-video"></i></div>
+                        <h3>Multiple Formats</h3>
+                        <p>Download in MP4, MKV, AVI, and other popular video formats.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-tv"></i></div>
+                        <h3>Quality Selection</h3>
+                        <p>Choose from 1080p, 720p, 480p, or 360p resolutions.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3>Batch Download</h3>
+                        <p>Download multiple TeraBox videos at once to save time.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-cloud-download-alt"></i></div>
+                        <h3>Cloud to Device</h3>
+                        <p>Transfer videos from TeraBox cloud directly to your device.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-eye"></i></div>
+                        <h3>Video Preview</h3>
+                        <p>Preview videos before downloading to ensure you get the right file.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Bottom Ad Banner -->
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container footer-content">
+            <a href="/" class="logo" style="color: white;">TeraBox Downloader Pro</a>
+            <div class="footer-links">
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
+                <a href="/faq">FAQ</a>
+                <a href="/contact">Contact Us</a>
+            </div>
+            <p class="copyright">© 2023 TeraBox Downloader Pro. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // DOM Elements
+            const videoUrl = document.getElementById('videoUrl');
+            const fetchBtn = document.getElementById('fetchBtn');
+            const previewContainer = document.getElementById('previewContainer');
+            const videoPreview = document.getElementById('videoPreview');
+            const downloadFormat = document.getElementById('downloadFormat');
+            const downloadQuality = document.getElementById('downloadQuality');
+            const downloadBtn = document.getElementById('downloadBtn');
+            const downloadMp3Btn = document.getElementById('downloadMp3Btn');
+            const downloadStatus = document.getElementById('downloadStatus');
+            const downloadProgress = document.getElementById('downloadProgress');
+            const progressText = document.getElementById('progressText');
+            const speedText = document.getElementById('speedText');
+            const fileName = document.getElementById('fileName');
+            const pauseBtn = document.getElementById('pauseBtn');
+            const cancelBtn = document.getElementById('cancelBtn');
+            const spinner = document.getElementById('spinner');
+            const batchDownloadBtn = document.getElementById('batchDownloadBtn');
+            
+            // Variables
+            let isDownloading = false;
+            let isPaused = false;
+            let currentDownload = null;
+            
+            // Event Listeners
+            fetchBtn.addEventListener('click', fetchVideoInfo);
+            downloadBtn.addEventListener('click', startDownload);
+            downloadMp3Btn.addEventListener('click', downloadAsMp3);
+            pauseBtn.addEventListener('click', togglePause);
+            cancelBtn.addEventListener('click', cancelDownload);
+            batchDownloadBtn.addEventListener('click', startBatchDownload);
+            
+            // Functions
+            function fetchVideoInfo() {
+                const url = videoUrl.value.trim();
+                
+                if (!url) {
+                    alert('Please enter a TeraBox video URL');
+                    return;
+                }
+                
+                if (!isValidTeraBoxUrl(url)) {
+                    alert('Please enter a valid TeraBox video URL');
+                    return;
+                }
+                
+                // Show loading spinner
+                spinner.style.display = 'block';
+                fetchBtn.disabled = true;
+                
+                // Simulate API call to fetch video info
+                setTimeout(() => {
+                    // In a real app, this would make an actual API call
+                    // For demo, we'll simulate a successful response
+                    const videoInfo = {
+                        title: 'Sample TeraBox Video',
+                        thumbnail: 'https://via.placeholder.com/500x300',
+                        duration: '5:30',
+                        formats: ['1080p', '720p', '480p', '360p'],
+                        size: '45.7 MB'
+                    };
+                    
+                    // Update UI with video info
+                    videoPreview.src = 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4';
+                    videoPreview.poster = videoInfo.thumbnail;
+                    previewContainer.style.display = 'block';
+                    downloadBtn.disabled = false;
+                    
+                    // Hide spinner
+                    spinner.style.display = 'none';
+                    fetchBtn.disabled = false;
+                    
+                    // Scroll to preview
+                    previewContainer.scrollIntoView({ behavior: 'smooth' });
+                }, 1500);
+            }
+            
+            function isValidTeraBoxUrl(url) {
+                // Simple validation for demo purposes
+                // In a real app, you'd have more robust validation
+                return url.includes('terabox.com') || url.includes('teraboxapp.com');
+            }
+            
+            function startDownload() {
+                const url = videoUrl.value.trim();
+                const format = downloadFormat.value;
+                const quality = downloadQuality.value;
+                
+                if (!url) {
+                    alert('Please enter a TeraBox video URL');
+                    return;
+                }
+                
+                // Show download status
+                downloadStatus.style.display = 'block';
+                isDownloading = true;
+                isPaused = false;
+                pauseBtn.innerHTML = '<i class="fas fa-pause"></i> Pause';
+                
+                // Simulate download progress
+                let progress = 0;
+                const speed = Math.random() * 2000 + 500; // Random speed between 500-2500 KB/s
+                const fileSize = Math.random() * 50 + 10; // Random size between 10-60 MB
+                
+                fileName.textContent = `video_${quality}p.${format}`;
+                
+                currentDownload = setInterval(() => {
+                    if (!isPaused) {
+                        progress += Math.random() * 5 + 1; // Increment progress
+                        if (progress > 100) progress = 100;
+                        
+                        downloadProgress.style.width = `${progress}%`;
+                        progressText.textContent = `${Math.round(progress)}%`;
+                        
+                        const downloadedMB = (fileSize * progress / 100).toFixed(1);
+                        speedText.textContent = `${Math.round(speed)} KB/s • ${downloadedMB} MB / ${fileSize.toFixed(1)} MB`;
+                        
+                        if (progress >= 100) {
+                            clearInterval(currentDownload);
+                            isDownloading = false;
+                            progressText.textContent = 'Download complete!';
+                            speedText.textContent = '';
+                            
+                            // Change pause button to open button
+                            pauseBtn.innerHTML = '<i class="fas fa-folder-open"></i> Open Folder';
+                            pauseBtn.onclick = function() {
+                                alert('In a real app, this would open the download folder');
+                            };
+                        }
+                    }
+                }, 200);
+            }
+            
+            function downloadAsMp3() {
+                alert('In a real app, this would extract and download the audio as MP3');
+            }
+            
+            function togglePause() {
+                if (!isDownloading) return;
+                
+                isPaused = !isPaused;
+                if (isPaused) {
+                    pauseBtn.innerHTML = '<i class="fas fa-play"></i> Resume';
+                } else {
+                    pauseBtn.innerHTML = '<i class="fas fa-pause"></i> Pause';
+                }
+            }
+            
+            function cancelDownload() {
+                if (currentDownload) {
+                    clearInterval(currentDownload);
+                    downloadStatus.style.display = 'none';
+                    isDownloading = false;
+                    downloadProgress.style.width = '0%';
+                }
+            }
+            
+            function addBatchUrl() {
+                const batchUrls = document.getElementById('batchUrls');
+                const newUrl = document.createElement('div');
+                newUrl.className = 'batch-url';
+                newUrl.innerHTML = `
+                    <input type="text" placeholder="Paste TeraBox video URL">
+                    <button class="btn btn-danger" onclick="removeBatchUrl(this)">
+                        <i class="fas fa-times"></i>
+                    </button>
+                `;
+                batchUrls.appendChild(newUrl);
+            }
+            
+            function removeBatchUrl(button) {
+                const batchUrls = document.getElementById('batchUrls');
+                if (batchUrls.children.length > 1) {
+                    button.parentElement.remove();
+                } else {
+                    // Clear input if it's the last one
+                    const input = button.previousElementSibling;
+                    input.value = '';
+                }
+            }
+            
+            function startBatchDownload() {
+                const batchUrls = document.getElementById('batchUrls');
+                const urls = [];
+                
+                // Collect all valid URLs
+                for (let i = 0; i < batchUrls.children.length; i++) {
+                    const url = batchUrls.children[i].querySelector('input').value.trim();
+                    if (url && isValidTeraBoxUrl(url)) {
+                        urls.push(url);
+                    }
+                }
+                
+                if (urls.length === 0) {
+                    alert('Please add at least one valid TeraBox video URL');
+                    return;
+                }
+                
+                alert(`In a real app, this would download ${urls.length} videos in batch mode`);
+            }
+        });
+        
+        // Make functions available globally for inline event handlers
+        window.addBatchUrl = addBatchUrl;
+        window.removeBatchUrl = removeBatchUrl;
+    </script>
+    
+    <!-- Structured data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "TeraBox Downloader Pro - Video Download Tool",
+        "url": "https://yourdomain.com/terabox-downloader",
+        "description": "Free online tool to download videos from TeraBox cloud storage in multiple formats and resolutions. No watermark, fast speeds.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "creator": {
+            "@type": "Organization",
+            "name": "TeraBox Downloader Pro"
+        }
+    }
+    </script>
+</body>
+</html>
